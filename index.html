@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Defence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Defend your air space from enemy aircraft to engage<i class="bi bi-airplane"></i></h1>
+        <button class="playBtn">PLAY</button>
+    </div>
+
+    <div class="container">
+        <h1>Select enemy aircraft <br> <small>Click aircraft to shoot</small></h1>
+        <ul class="airList">
+            <li>
+                <button class="airBtn">
+                    <img src="https://e0.pxfuel.com/wallpapers/717/196/desktop-wallpaper-lockheed-martin-f-35-lightning-ii-background-f-35.jpg" class="img-fluid" alt="" />
+                    <p>F35</p>
+                </button>
+            </li>
+            <li>
+                <button class="airBtn">
+                    <img src="https://images.unsplash.com/photo-1614121174144-bd53a169780e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmlnaHRlciUyMGpldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60" class="img-fluid" alt="roach" />
+                    <p>SR71</p>
+                </button>
+            </li>
+            <li>
+                <button class="airBtn">
+                    <img src="https://media.istockphoto.com/id/1383022984/photo/f-16-fighting-falcon-fighter-jet-against-dramatic-clouds.jpg?s=612x612&w=0&k=20&c=ejvQb63PR9bpVhHsCqHiV36ighgsaZOTzDp4J40iJ0U=" alt="fly">
+                    <p>F16</p>
+                </button>
+            </li>
+            <li>
+                <button class="airBtn">
+                    <img src="https://plus.unsplash.com/premium_photo-1661875421694-9feb67b9e003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmlnaHRlciUyMGhlbGljb3B0ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60" alt="mosquito" />
+                    <p>UAV</p>
+                </button>
+            </li>
+            <li>
+                <button class="airBtn">
+                    <img src="https://images.unsplash.com/photo-1562702581-5c1928f56fa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZpZ2h0ZXIlMjBoZWxpY29wdGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60" alt="mosquito" />
+                    <p>Attack Helicopter</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container gameContainer">
+        <h3 class="time">Time: 00:00</h3>
+        <h3 class="score">Enemy Aircrafts Shot Down: 0</h3>
+        <h5 class="message">
+            Double up soldier!!! <br> Eliminate all hostile aircraft!!!
+        </h5>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
