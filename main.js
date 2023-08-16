@@ -89,5 +89,5 @@ function increaseScore() {
     if (score > 30) {
         messageEl.classList.add('visible');
     }
-    scoreEl.innerHTML = `Enemy Aircrafts Shot Down: ${score}`;
+    scoreEl.innerHTML = `Aircrafts Down: ${score}`;
 }
