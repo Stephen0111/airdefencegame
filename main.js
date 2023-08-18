@@ -13,12 +13,12 @@ let seconds = 0;
 let score = 0;
 let selectedair = {};
 
-// When you click play button it will go up(disappear) and now insectList container will display on screen.
+// When you click play button,  airList container will display on screen.
 playBtnEl.addEventListener('click', () => {
     containerEl[0].classList.add('up');
 })
 
-// When click on any of the insect then it will note down source & alternative(alt) of the image and call the start game function & also createInsect function by 1000ms delay.
+// When user clicks on any of the aircrafts  it will note down source & alternative(alt) of the image and call the start game function & also createair function by 1000ms delay.
 airBtnEls.forEach(btn => {
     btn.addEventListener('click', () => {
         const img = btn.querySelector('img');
@@ -46,7 +46,7 @@ function increaseTime() {
     seconds++;
 }
 
-// This function generate insects at random location by using getRandomLocation function.
+// This function generates aircrafts at random locations using getRandomLocation function.
 function createair() {
     const air = document.createElement('div');
     air.classList.add('air');
@@ -56,7 +56,7 @@ function createair() {
     air.innerHTML = `<img src="${selectedair.src}" alt="${selectedair.alt}" style="transform: rotate(${Math.random() * 360}deg)" />`;
     gameContainerEl.appendChild(air)
 
-    // When we click on any of the insects then it will call the catchInsect function.
+    // When we click on any of the aircrafts it will call the catchair function.
     air.addEventListener('click', catchair)
 
 }
@@ -70,14 +70,14 @@ function getRandomLocation() {
     return { x, y }
 }
 
-// when we catch the insect it calls the increaseScore function and add caught class to remove that insect and also calls the addInsects function.
+// when we catch the air it calls the increaseScore function and add caught class to remove that air and also calls the addair function.
 function catchair() {
     increaseScore();
     this.classList.add('caught')
     addair()
 }
 
-// It will call createInsect function 2 times with delay 1000ms and 1500ms.
+// It will call createair function 2 times with delay 1000ms and 1500ms.
 function addair() {
     setTimeout(createair, 1000)
     setTimeout(createair, 1500)
