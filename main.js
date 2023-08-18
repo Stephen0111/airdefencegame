@@ -53,7 +53,7 @@ function createair() {
     const { x, y } = getRandomLocation();
     air.style.top = `${y}px`;
     air.style.left = `${x}px`;
-    air.innerHTML = `<img src="${selectedair.src}" alt="${selectedair.alt}" style="transform: rotate(${Math.random() * 360}deg)" />`;
+    air.innerHTML = `<img src="${selectedair.src}" alt="${selectedair.alt}"  />`;
     gameContainerEl.appendChild(air)
 
     // When we click on any of the aircrafts it will call the catchair function.
@@ -79,8 +79,8 @@ function catchair() {
 
 // It will call createair function 2 times with delay 1000ms and 1500ms.
 function addair() {
-    setTimeout(createair, 1000)
     setTimeout(createair, 1500)
+    setTimeout(createair, 2000)
 }
 
 // Updates the score and it will display a message after reaching score greater than 20.
